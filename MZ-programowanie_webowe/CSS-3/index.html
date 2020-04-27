@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Retrogranie</title>
+	
+	<meta name="description" content="Serwis o starych grach pochodzących z Nintendo Entertainment System" />
+	<meta name="keywords" content="gry, komputerowe, retro, nes, konsole, retrogranie, stare gry" />
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+</head>
+
+<body>
+	<div class="wraper">
+        <div class="header">
+            <div class="logo">
+                <img src="pad.png" style="float: left;"/>
+                <span style="color: #c34f4f">retro</span>granie.com
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="nav"></div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium purus neque, eu euismod massa rhoncus laoreet. Mauris sagittis nibh ut est sagittis, et tincidunt elit porta. Aenean accumsan nulla a metus ullamcorper, sit amet commodo lorem molestie. Nam non metus ultricies, feugiat lorem ut, vehicula metus. Nulla in lorem eget nibh luctus varius vel quis arcu. Nullam tortor dolor, elementum non posuere at, scelerisque id lectus. Donec vulputate est sit amet tellus porta auctor. Sed ac malesuada risus. Fusce rutrum sed ex ut condimentum. Nam ut arcu sed purus porta auctor. Mauris eget porttitor nisl, ut feugiat metus. Morbi lacinia ullamcorper maximus.</p>
+
+            <p>Sed sollicitudin elit eu aliquet molestie. Pellentesque et viverra felis. Pellentesque finibus magna risus, vitae mattis nisi sagittis non. Integer urna massa, tempor eu lacus et, porta molestie sem. Aliquam dignissim diam finibus, mattis neque eget, tincidunt eros. In hac habitasse platea dictumst. Donec nibh ante, vestibulum eu pharetra mattis, pellentesque id metus. Aliquam posuere lectus ut elit tempus, et dignissim diam vestibulum. Aliquam ullamcorper gravida pulvinar. Donec venenatis volutpat pellentesque. Nullam efficitur vestibulum lectus, ut auctor nunc pharetra in.</p>
+
+            <p>Aenean sem nisi, molestie a facilisis a, hendrerit quis lorem. Suspendisse id porta velit. Donec condimentum, ante at vulputate condimentum, ante diam consequat ligula, quis ornare nisi lorem sit amet ipsum. Phasellus enim justo, efficitur vitae eros id, eleifend imperdiet nibh. Duis vel varius arcu. Fusce id dolor quam. Sed at pellentesque justo. In ut ligula id arcu interdum sagittis nec a urna. Aenean lacus velit, pellentesque vitae elit non, volutpat vestibulum ligula. Duis lectus lectus, egestas a felis quis, ullamcorper condimentum nibh. Sed maximus pharetra consequat. Aenean mollis sapien luctus est fermentum, vel condimentum odio sagittis. Nulla a justo massa. Aliquam volutpat, ante facilisis dignissim finibus, eros odio ornare sapien, vitae sodales orci nisl in sem. In nunc lacus, aliquam id dui non, interdum aliquam risus.</p>
+
+            <p>Nulla dignissim sapien sit amet justo maximus, eget porta nibh bibendum. Nunc at nisl ipsum. Duis enim tellus, volutpat nec auctor non, tincidunt vel nulla. Duis mollis felis bibendum, blandit orci non, porttitor massa. Sed ac augue ornare, ornare sapien nec, vestibulum arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ac sem tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus rutrum accumsan felis, a euismod metus volutpat eget. Quisque maximus enim elit.</p>
+
+            <p>Nullam semper dui diam, et mollis massa laoreet vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus dui neque, porta tincidunt dignissim ut, blandit vel est. Pellentesque quis urna at quam viverra placerat. Integer dui velit, ultrices in felis eget, rutrum egestas augue. Donec eros velit, suscipit et semper quis, iaculis vel arcu. Aenean efficitur quam semper nisl interdum fringilla. Sed a arcu vitae dolor lobortis consequat eu nec lorem. Curabitur maximus efficitur urna nec varius. Mauris purus lacus, aliquam at dignissim at, iaculis vitae magna. Ut egestas interdum mauris facilisis molestie. Vestibulum sit amet molestie dolor. Sed rhoncus ipsum neque, eget rhoncus purus viverra sit amet.</p> 
+        </div>
+        <div class="socials">
+            <div class="socialdivs">
+                <div class="fb">
+                    <i class="icon-facebook-squared"></i>
+                </div>
+                <div class="yt">
+                    <i class="icon-youtube-squared"></i>   
+                </div>
+                <div class="tw">
+                    <i class="icon-twitter-squared"></i>
+                </div>
+                <div class="gplus">
+                    <i class="icon-gplus-squared"></i>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="footer">Retrogranie.com &copy; 2020 Than you for your visit Mario! But our Princess is in another castle! ;)</div>
+    </div>
+    <script src="jquery-3.5.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function(){
+        var ScrollY = $(window).scrollTop();
+
+        if (ScrollY > NavY) { 
+            $('.nav').addClass('sticky');
+        } else {
+            $('.nav').removeClass('sticky'); 
+        }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+        });
+    </script>
+</body>
+</html>
