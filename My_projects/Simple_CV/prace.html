@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Caspian Arts - Prace</title>
+    <meta name="description" content="Portfolio prezentujące prace z zakresu grafiki 3D i animacji">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($)
+        {
+            $.scrollTo(0);
+            
+            $('#link7').click(function(){$.scrollTo($('#donutsv2'), 500);});
+            $('#link6').click(function(){$.scrollTo($('#kowadlo'), 500);});
+            $('#link5').click(function(){$.scrollTo($('#sushi'), 500);});
+            $('#link4').click(function(){$.scrollTo($('#donutsv1'), 500);});
+            $('#link3').click(function(){$.scrollTo($('#third'), 500);});
+            $('#link2').click(function(){$.scrollTo($('#second'), 500);});
+            $('#link1').click(function(){$.scrollTo($('#first'), 500);});
+            $('.scrollUp').click(function(){$.scrollTo($('body'), 500);});
+        }
+        );
+        //pokaż podczas przewijania 
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>300) $('.scrollUp').fadeIn();
+            else $('.scrollUp').fadeOut();
+        }
+        );
+    </script>
+</head>
+
+<body>
+<div id="container">
+    <a href="#" class="scrollUp"></a>
+    <div id="header">
+        <div id="logo">
+        <img src="img/Logo-transparent.png" alt="Dragon logo">
+        </div>
+        <h1>
+        Caspian Arts <p>- grafika 3D</p>
+        </h1>
+    </div>
+    
+    <div style="width:1200px;height: 50px;"></div>
+ 
+    <div id="nav">
+        <a href="index.html"><div class="tile"><i class="icon-user"></i><br/>Kim jestem</div></a>
+        <a href="prace.html"> <div class="tile"><i class="icon-brush"></i><br/>Moje prace</div></a>
+        <a href="#"><div class="tile" style="border: none;"><i class="icon-mail-alt"></i><br/>Kontakt</div></a>  
+    </div>
+    
+    <div id="article">
+        <div id="spis">
+            <ul>
+                <li>Modele 3D
+                    <ol reversed>
+                        <li><a id="link7" href="#">Donuts v2</a></li>
+                        <li><a id="link6" href="#">Kowadło</a></li>
+                        <li><a id="link5" href="#">Sushi</a></li>
+                        <li><a id="link4" href="#">Donuts v1</a></li>
+                        <li><a id="link3" href="#">Trzeci model</a></li>
+                        <li><a id="link2" href="#">Drugi model</a></li>
+                        <li><a id="link1" href="#">Pierwszy model</a></li>
+                    </ol>
+                </li>
+                <li>Animacje</li>
+                <li>Str. internetowe</li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="article">
+            <h2 id="donutsv2">Praca nad pączkiem typu Donut:</h2>
+            <img src="img/donut.png" width="880" height="500" style="border-radius: 25px;">
+            Dodano dnia: 07.07.2020
+        </div>
+        <div class="article">
+            <h2 id="kowadlo">Stalowe kowadło:</h2>
+            <img src="img/Anvil.png" width="880" height="500" style="border-radius: 25px;">
+            Dodano dnia: 05.08.2019
+        </div>
+        <div class="article">
+            <h2 id="sushi">Sushi:</h2>
+            <img src="img/Sushi.png" width="880" height="500" style="border-radius: 25px;">
+            Dodano dnia: 29.07.2019
+        </div>
+        <div class="article">
+            <h2 id="donutsv1">Pierwsze Donut'y:</h2>
+            <img src="img/Donuts.png" width="880" height="500" style="border-radius: 25px;">
+            Dodano dnia: 20.07.2019
+        </div>
+        <div class="article">
+            <h2 id="third">Trzeci model:</h2>
+            <img src="img/Car.PNG" width="880" height="500" style="border-radius: 25px;">
+            Dodano dnia: 15.06.2019
+        </div>
+        <div class="article">
+            <h2 id="second">Drugi model:</h2>
+            <img src="img/Saturn.PNG" width="880" height="500" style="border-radius: 25px;">
+            Dodano dnia: 07.06.2019
+        </div>
+        <div class="article">
+            <h2 id="first">Pierwszy model:</h2>
+            <img src="img/Pinetree.PNG" width="880" height="500" style="border-radius: 25px;">
+            Dodano dnia: 05.06.2019
+        </div>
+        
+        <div id="socials">
+            <div class="tile_socials"><i class="icon-facebook"></i></div>
+            <div class="tile_socials"><i class="icon-instagram"></i></div>
+            <div class="tile_socials" style="border: none;margin-right: 0px;"><i class="icon-git"></i></div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="footer">
+    Portfolio stworzone przez Caspian Arts. Wszelkie prawa zastrzeżone &copy; 2020
+    </div>
+    
+    
+</div>
+    
+</body>
+</html>
