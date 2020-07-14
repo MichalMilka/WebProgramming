@@ -35,15 +35,15 @@
     <script src="jquery-3.5.1.min.js"></script>
     <script>
     $(document).ready(function() {
-    var stickyNavTop = $('.nav').offset().top;
+    var stickyNavTop = $('#SidebarNav').offset().top;
 
     var stickyNav = function(){
     var scrollTop = $(window).scrollTop();
 
     if (scrollTop > stickyNavTop) {
-    $('.nav').addClass('sticky');
+    $('#SidebarNav').addClass('sticky');
     } else {
-    $('.nav').removeClass('sticky');
+    $('#SidebarNav').removeClass('sticky');
     }
     };
 
@@ -57,27 +57,28 @@
 </head>
 
 <body>
-    <div id="container">
-        <a href="#" class="scrollUp"></a>
-        <div id="header">
+    <a href="#" class="scrollUp"></a>
+    
+    <header>
             <div id="logo">
             <img src="img/Logo-transparent.png" alt="Dragon logo">
             </div>
             <h1>
             Caspian Arts <p>- grafika 3D</p>
             </h1>
-        </div>
+    </header>
 
-        <div style="width:1200px;height: 50px;"></div>
-
-        <div class="nav">
-            <a href="index.html"><div class="tile"><i class="icon-user"></i><br/>Kim jestem</div></a>
-            <a href="prace.html"> <div class="tile"><i class="icon-brush"></i><br/>Moje prace</div></a>
-            <a href="#"><div class="tile" style="border: none;"><i class="icon-mail-alt"></i><br/>Kontakt</div></a>  
-        </div>
-
-        <div id="article">
-            <div id="spis">
+    <nav id="SidebarNav">
+        <a href="index.html"><div class="tile"><i class="icon-user"></i><br/>Kim jestem</div></a>
+        <a href="prace.html"> <div class="tile"><i class="icon-brush"></i><br/>Moje prace</div></a>
+        <a href="kontakt.html"><div class="tile" style="border: none;"><i class="icon-mail-alt"></i><br/>Kontakt</div></a>  
+    </nav>
+    
+    <main>
+        
+        <article>
+            
+            <nav id="ArticleNav">
                 <ul>
                     <li>Modele 3D
                         <ol reversed>
@@ -93,54 +94,60 @@
                     <li>Animacje</li>
                     <li>Str. internetowe</li>
                 </ul>
-            </div>
-            <div style="clear: both;"></div>
-            <div class="article">
+            </nav>
+            
+            <section>
                 <h2 id="donutsv2">Praca nad pączkiem typu Donut:</h2>
                 <img src="img/donut.png" width="880" height="500" style="border-radius: 25px;">
                 Dodano dnia: 07.07.2020
-            </div>
-            <div class="article">
+            </section>
+            
+            <section>
                 <h2 id="kowadlo">Stalowe kowadło:</h2>
                 <img src="img/Anvil.png" width="880" height="500" style="border-radius: 25px;">
                 Dodano dnia: 05.08.2019
-            </div>
-            <div class="article">
+            </section>
+            
+            <section>
                 <h2 id="sushi">Sushi:</h2>
                 <img src="img/Sushi.png" width="880" height="500" style="border-radius: 25px;">
                 Dodano dnia: 29.07.2019
-            </div>
-            <div class="article">
+            </section>
+            
+            <section>
                 <h2 id="donutsv1">Pierwsze Donut'y:</h2>
                 <img src="img/Donuts.png" width="880" height="500" style="border-radius: 25px;">
                 Dodano dnia: 20.07.2019
-            </div>
-            <div class="article">
+            </section>
+            
+            <section>
                 <h2 id="third">Trzeci model:</h2>
                 <img src="img/Car.PNG" width="880" height="500" style="border-radius: 25px;">
                 Dodano dnia: 15.06.2019
-            </div>
-            <div class="article">
+            </section>
+            
+            <section>
                 <h2 id="second">Drugi model:</h2>
                 <img src="img/Saturn.PNG" width="880" height="500" style="border-radius: 25px;">
                 Dodano dnia: 07.06.2019
-            </div>
-            <div class="article">
+            </section>
+            
+            <section>
                 <h2 id="first">Pierwszy model:</h2>
                 <img src="img/Pinetree.PNG" width="880" height="500" style="border-radius: 25px;">
                 Dodano dnia: 05.06.2019
-            </div>
+            </section>
 
-            <div id="socials">
-                <div class="tile_socials"><i class="icon-facebook"></i></div>
-                <div class="tile_socials"><i class="icon-instagram"></i></div>
-                <div class="tile_socials" style="border: none;margin-right: 0px;"><i class="icon-git"></i></div>
-            </div>
-        </div>
+            <footer id="socials">
+                <a href="#"><div class="tile_socials"><i class="icon-facebook"></i></div></a>
+                <a href="#"><div class="tile_socials"><i class="icon-instagram"></i></div></a>
+                <a href="#"><div class="tile_socials" style="border: none;margin-right: 0px;"><i class="icon-git"></i></div></a>
+            </footer>
+        </article>
         <div style="clear: both;"></div>
-        <div id="footer">
+        <footer id="MainFooter">
         Portfolio stworzone przez Caspian Arts. Wszelkie prawa zastrzeżone &copy; 2020
-        </div> 
-    </div>
+        </footer>
+    </main>  
 </body>
 </html>
