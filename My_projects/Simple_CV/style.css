@@ -43,7 +43,7 @@ h1 > p
     padding-left: 10px;
     margin-right: 30px;
 }
-#nav
+.nav
 {
     width: 250px;
     height: 720px;
@@ -160,4 +160,11 @@ ul > li > ol > li > a:hover
     right: 25px;
     bottom: 25px;
     display: none;
+}
+.sticky
+{
+    position:fixed;
+    left: 200;
+    top: 0;
+    z-index: 100;
 }
